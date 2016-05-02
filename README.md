@@ -6,7 +6,7 @@
 ```npm i -g directory-templates```
 
 ##Usage
-Directory-templates uses 'dt' as command-line namespace
+Directory-templates uses `dt` as command-line namespace
 
 dt has 4 options
 
