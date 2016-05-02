@@ -16,12 +16,15 @@ dt has 4 options
  - -list
 
 `-add` takes a name you specify as the name of the folder to create within `directory templates`.
+
 Example: `dt -add=somename`, multi-word: `dt -add="some name"`.
 
 `-clone` takes a name you specify as the name from within **directory templates** and clones the contents of the `template folder` to the working directory.
+
 Example: `dt -clone=somename` , multi-word: `dt -add="some name"`.
 
 `-open` opens the `template folder` with the name provided, if no name is pass then it will ask to create a new folder to be created inside **directory templates** with that name then opens that folder.
+
 Example: `dt -open=somename` , multi-word: `dt -add="some name"`.
 
 `-list` outputs an array of templates found within **directory templates** to the command-line
