@@ -23,6 +23,17 @@ let dt = {
     let _path;
     let templatName;
 
+    switch (process.platform) {
+      case 'darwin':
+        this.platform = 'finder';
+        break;
+      case 'win32':
+        this.platform = 'explorer';
+        break;
+      default:
+        this.platform = 'explorer';
+    }
+    
     if (openCommand != null) {
       templatName = openCommand[0].substr(6);
       _path = path.resolve(__dirname, 'templates', templatName);
@@ -42,17 +53,6 @@ let dt = {
       this.clone(externalPath, _path , templatName);
     }
 
-
-    switch (process.platform) {
-      case 'darwin':
-        this.platform = 'finder';
-        break;
-      case 'win32':
-        this.platform = 'explorer';
-        break;
-      default:
-        this.platform = 'explorer';
-    }
 
   },
   list: function() {
