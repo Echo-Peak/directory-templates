@@ -1,0 +1,15 @@
+{
+  "name": "directory-templates",
+  "version": "1.0.0",
+  "description": "Make a folder stucture. clone it, add it. accses that folder structure anywere through the command-line",
+  "main": "index.js",
+  "author": "Micheal Wheeler",
+  "license": "MIT",
+  "bin": {
+    "dt": "./index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "mkdirp": "^0.5.1"
+  }
+}
