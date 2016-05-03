@@ -1,6 +1,6 @@
 {
   "name": "directory-templates",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Make a folder stucture. clone it, add it. accses that folder structure anywere through the command-line",
   "main": "index.js",
   "author": "Micheal Wheeler",
