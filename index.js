@@ -25,7 +25,7 @@ let dt = {
 
     switch (process.platform) {
       case 'darwin':
-        this.platform = 'finder';
+        this.platform = 'open';
         break;
       case 'win32':
         this.platform = 'explorer';
@@ -33,7 +33,7 @@ let dt = {
       default:
         this.platform = 'explorer';
     }
-    
+
     if (openCommand != null) {
       templatName = openCommand[0].substr(6);
       _path = path.resolve(__dirname, 'templates', templatName);
