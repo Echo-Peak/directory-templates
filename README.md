@@ -1,30 +1,23 @@
-**Directory-templates** is simple command-line utility that allows you to add,clone the contents a folder from any location via the command-line.
-
-**Directory-templates** contains a folder called `templates where you can add folders to and clone from
+**Directory-templates** is simple command-line utility that allows you to add , build , open templates generated from json or copy the contents of a saved directory to your CWD.
 
 ##Install
 ```npm i -g directory-templates```
 
 ##Usage
-Directory-templates uses `dt` as command-line namespace
 
-dt has 4 options
+Commands `add` , `build-from` ,`open`, `list`.
 
- - -add
- - -clone
- - -open
- - -list
 
-`-add` takes a name you specify as the name of the folder to create within `directory templates`.
+* `add` will add  a template or directorie to **Directory-templates**
+- `build-from` builds directory-structure at CWD based on template name or directorie name given
+- `open` with no parameters passed opens the root directory otherwise opens the        template or directory given
+- `list` shows a list of templates & directories you created
 
-Example: `dt -add=somename`, multi-word: `dt -add="some name"`.
+Flags `-delete` , `-o`
+- `-delete` deletes everything from both template folder & directories folder
+- `-o` Used in conjunction with `add` to open explorer or a text-editor
 
-`-clone` takes a name you specify as the name from within **directory templates** and clones the contents of the `template folder` to the working directory.
-
-Example: `dt -clone=somename` , multi-word: `dt -add="some name"`.
-
-`-open` opens the `template folder` with the name provided, if no name is pass then it will ask to create a new folder to be created inside **directory templates** with that name then opens that folder.
-
-Example: `dt -open=somename` , multi-word: `dt -add="some name"`.
-
-`-list` outputs an array of templates found within **directory templates** to the command-line
+Example
+```
+dt add some-template
+```

@@ -1,7 +1,7 @@
 {
   "name": "directory-templates",
-  "version": "1.0.3",
-  "description": "Make a folder stucture. clone it, add it. accses that folder structure anywere through the command-line",
+  "version": "2.0.0",
+  "description": "generate directory strucutres from json , add & copy directorys anywere",
   "main": "index.js",
   "author": "Micheal Wheeler",
   "license": "MIT",
