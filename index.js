@@ -69,6 +69,10 @@ class DT{
   }
   argParser(argv){
     //flags
+    if(argv.length < 3){
+      console.log("no params passed");
+      this['help']();
+    }
     argv.indexOf('-o') > 0 && (this.openWith = true);
     argv.indexOf('-delete') > 0 && this['delete']();//EVERYTHING
     argv.indexOf('list') > 0 && this['list']();
